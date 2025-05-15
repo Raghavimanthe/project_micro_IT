@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M Raghavi - E-Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            background: #444;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline;
+            padding: 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        section {
+            padding: 20px;
+            background: white;
+            margin: 10px auto;
+            width: 80%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+        .project {
+            background: #e0e0e0;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #333;
+            color: white;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>M Raghavi</h1>
+        <p>Second-Year Computer Science Engineering Student | Aspiring Data Scientist</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hello! I am <strong>M Raghavi</strong>, a passionate student focused on <strong>Data Science</strong> and its applications. I have a strong interest in <strong>database management, machine learning, and data analytics</strong>.</p>
+        <h3>Key Skills</h3>
+        <ul>
+            <li>Proficiency in Python, SQL, and Power BI</li>
+            <li>Strong understanding of Data Structures </li>
+            <li>Experience in Data Visualization </li>
+        </ul>
+    </section>
+
+    <section id="resume">
+        <h2>Resume</h2>
+        <p><a href="file:///C:/Users/ragha/OneDrive/Desktop/English/My%20Resume%20(1)%20320.pdf" target="_blank">Download Resume</a></p>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Book Store</h3>
+            <p>A huge library where you can find lot of book through online.</p>
+            <p><strong>Technologies Used:</strong> Python, Pandas, Matplotlib, Power BI</p>
+            <p><a href="https://github.com/Raghavimanthe">GitHub Link</a></p>
+        </div>
+        <div class="project">
+            <h3>Event Organizer</h3>
+            <p>Developed a online event customization.</p>
+            <p><strong>Technologies Used:</strong> SQL, Python, Flask</p>
+            <p><a href="https://github.com/Raghavimanthe">GitHub Link</a></p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Skills & Technologies</h2>
+        <h3>Programming Languages:</h3>
+        <p>Python, C++, SQL</p>
+        <h3>Tools & Technologies:</h3>
+        <p>Git, GitHub, Power BI, MySQL</p>
+        <h3>Soft Skills:</h3>
+        <p>Teamwork, Problem-Solving, Communication</p>
+    </section>
+
+    <section id="certifications">
+        <h2>Certifications & Online Courses</h2>
+        <ul>
+            <li>Data Analysis Deloitte</li>
+            <li>Cambridge </li>
+                    </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: raghavimanthe@gmail.com</p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/Raghavi-manthe-498693318">LinkedIn Profile</a></p>
+        <p>GitHub: <a href="https://github.com/Raghavimanthe">GitHub Profile</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 M Raghavi | E-Portfolio</p>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const links = document.querySelectorAll("nav ul li a");
+            links.forEach(link => {
+                link.addEventListener("click", function (event) {
+                    event.preventDefault();
+                    const targetId = this.getAttribute("href").substring(1);
+                    document.getElementById(targetId).scrollIntoView({ behavior: "smooth" });
+                });
+            });
+        });
+    </script>
+</body>
+</html>
